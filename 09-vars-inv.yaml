@@ -1,0 +1,6 @@
+- name: vars form inventory
+  hosts: node1
+  tasks: #list of tasks/modules/collections
+  - name: printing vars form inventory
+    ansible.builtin.debug:
+      msg: "Hi, {{Trainer}} is teaching {{Course}}"
