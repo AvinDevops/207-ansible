@@ -1,5 +1,5 @@
 - name: variables
-  host: node1
+  hosts: node1
   vars:
     Course: "DevOps"
     Trainer: "Avin"
