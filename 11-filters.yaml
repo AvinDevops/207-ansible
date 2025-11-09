@@ -49,8 +49,8 @@
   hosts: node1
   vars:
     mylist:
-    - {'key': 'Course', 'value': 'AWS'},
-    - {'key': 'Trainer', 'value': 'Avin'},
+    - {'key': 'Course', 'value': 'AWS'}
+    - {'key': 'Trainer', 'value': 'Avin'}
     - {'key': 'Mode', 'value': 'Online'}
   tasks:  #list of tasks/modules/collections
   - name: Before converting
