@@ -21,7 +21,7 @@
     - nginx
     - mysql
     - postfix
----
+    
 #advanced loop
 - name: advanced loop
   hosts: node1
