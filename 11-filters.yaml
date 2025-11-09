@@ -1,0 +1,6 @@
+- name: filters or functions
+  hosts: node1
+  tasks: #list of tasks/collections/modules
+  - name: default value
+    ansible.builtin.debug:
+      msg: "I am {{Name}} | ('Avinash')"
