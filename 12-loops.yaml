@@ -11,6 +11,7 @@
 
 - name: loops
   hosts: node1
+  become: yes
   tasks: #list of tasks/modules/collections
   - name: installing apps by using loops
     ansible.builtin.package:
