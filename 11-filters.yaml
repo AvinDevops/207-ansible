@@ -28,3 +28,20 @@
       ages: [13,25,30,45,60,80,100]
     ansible.builtin.debug:
       msg: "min age is: {{ ages | min}} , max age is: {{ ages | max }}" 
+
+- name: dictonary to list
+  hosts: node1
+  vars:
+   mydict:
+      Course: "AWS"
+      Trainer: "Avin"
+      Mode: "Online"
+  tasks: # list of tasks/modules/collections
+  - name: Before converting  
+    ansible.builtin.debug:
+      msg: "Before converting {{ mydict }}"
+
+  - name: After converting
+    ansible.builtin.debug:
+      msg: "After converting {{ mydict | dict2items }}"
+
