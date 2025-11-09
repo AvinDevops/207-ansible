@@ -3,7 +3,12 @@
   tasks: #list of task/modules/collections
   - name: checking user exists or not
     ansible.builtin.command: id expense
+    register: user_output
     ignore_errors: yes
+
+  - name: printing user output
+    ansible.builtin.debug:
+      msg: {{user_output}}
 
   - name: checking script reached end
     ansible.builtin.debug:
