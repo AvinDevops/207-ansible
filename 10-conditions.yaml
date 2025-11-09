@@ -1,5 +1,6 @@
 - name: conditions
   hosts: node1
+  become: yes
   tasks: #list of task/modules/collections
   - name: checking user exists or not
     ansible.builtin.command: id expense
