@@ -1,0 +1,6 @@
+- name: vars from arguments
+  hosts: node1
+  tasks: #list of tasks/collections/modules
+  - name:
+    ansible.builtin.debug:
+      msg: "Hi, I am {{Firstname}} {{Lastname}} "
