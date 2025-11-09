@@ -8,7 +8,7 @@
 
   - name: printing user output
     ansible.builtin.debug:
-      msg: {{user_output}}
+      msg: "{{user_output}}"
 
   - name: checking script reached end
     ansible.builtin.debug:
