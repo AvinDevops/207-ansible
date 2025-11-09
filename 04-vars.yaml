@@ -1,0 +1,9 @@
+- name: variables
+  host: node1
+  vars:
+    Course: "DevOps"
+    Trainer: "Avin"
+  tasks: #list of tasks/modules/collections
+  - name: printing variables
+    ansible.builtin.debug:
+      msg: "Hi, {{Trainer}} is teaching {{Course}}"
