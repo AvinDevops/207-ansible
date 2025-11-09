@@ -9,3 +9,7 @@
       Course: "AWS"
     ansible.builtin.debug:
       msg: "{{Trainer}} is teaching {{Course}}"
+  
+  - name: printing
+    ansible.builtin.debug:
+      msg: "{{Trainer}} is teaching {{Course}}"
