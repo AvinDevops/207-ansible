@@ -1,10 +1,22 @@
-- name: loop
+# - name: loop
+#   hosts: node1
+#   tasks: #list of tasks/modules/collections
+#   - name: using loop
+#     ansible.builtin.debug:
+#       msg: "{{ item }}"
+#     loop:
+#     - linux
+#     - shell script
+#     - ansible
+
+- name: loops
   hosts: node1
   tasks: #list of tasks/modules/collections
-  - name: using loop
-    ansible.builtin.debug:
-      msg: "{{ item }}"
+  - name: installing apps by using loops
+    ansible.builtin.package:
+      name: "{{ item }}"
+      state: latest
     loop:
-    - linux
-    - shell script
-    - ansible
+    - nginx
+    - mysql
+    - postfix
