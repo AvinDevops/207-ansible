@@ -1,0 +1,8 @@
+- name: shell vs command module
+  hosts: node1
+  tasks: #list of tasks/collections/modules
+  - name: uisng shell module
+    ansible.builtin.shell: "echo Hi, this is shell module > /tmp/shell.txt"
+
+  - name: using command module
+    ansible.builtin.command: "echo Hi, this is command module > /tmp/command.txt"
