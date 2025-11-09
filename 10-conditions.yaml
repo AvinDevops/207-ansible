@@ -12,7 +12,7 @@
 
   - name: creating user
     ansible.builtin.debug: useradd expense
-    when: user_output.rc != 0
+    when: user_output.rc !=0
 
   - name: checking script reached end
     ansible.builtin.debug:
