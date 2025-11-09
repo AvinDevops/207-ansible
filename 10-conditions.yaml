@@ -11,8 +11,8 @@
       msg: "{{user_output}}"
 
   - name: creating user
-    ansible.builtin.debug: useradd expense
-    when: user_output.rc !=0
+    ansible.builtin.command: useradd expense
+    when: user_output.rc != 0
 
   - name: checking script reached end
     ansible.builtin.debug:
