@@ -16,3 +16,9 @@
       Name: "DevOps"
     ansible.builtin.debug:
       msg: "I am {{ Name | upper }}"
+
+  - name: removing duplicate
+    vars:
+      Numbers: [1,1,1,2,2,3,3,4,4]
+    ansible.builtin.debug:
+      msg: "{{ Numbers | unique }}"
