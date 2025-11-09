@@ -6,9 +6,13 @@
       msg: "I am {{ Name | default('Avinash') }}"
 
   - name: lowercase
+    vars:
+      Name: "Avinash"
     ansible.builtin.debug:
-      msg: "I am {{ Avinash | lower }}"
+      msg: "I am {{ Name | lower }}"
   
   - name: uppercase
+    vars:
+      Name: "DevOps"
     ansible.builtin.debug:
-      msg: "I am {{ Avinash | upper }}"
+      msg: "I am {{ Name | upper }}"
