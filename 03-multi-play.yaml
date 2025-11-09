@@ -1,0 +1,9 @@
+- name: multi-play
+  hosts: localhost
+  tasks: #list of tasks/modules/collections
+  - name: Play-1 and Task-1
+    ansible.builtin.debug:
+      msg: "Hi, this is form Play-1 and Task-1"
+  - name: Play-2 and Task-1
+    ansible.builtin.debug:
+      msg: "Hi, this is from Play-2 and Task-1"
