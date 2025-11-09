@@ -1,0 +1,9 @@
+- name: conditions
+  hosts: node1
+  tasks: #list of task/modules/collections
+  - name: checking user exists or not
+    ansible.builtin.command: id expense
+
+  - name: checking script reached end
+    ansible.builtin.debug:
+      msg: "Script reached end!"
