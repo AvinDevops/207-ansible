@@ -1,5 +1,6 @@
 - name: install nginx
   hosts: node1
+  become: yes
   tasks: # list of tasks/modules/collections
   - name: installing nginx
     ansible.builtin.dnf:
