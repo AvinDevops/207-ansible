@@ -1,0 +1,11 @@
+- name: vars at play and task level
+  hosts: node1
+  vars:
+    Course: "DevOps"
+    Trainer: "Avin"
+  tasks: #list of tasks/modules/collections
+  - name: printing play and task level variables
+    vars:
+      Course: "AWS"
+    ansible.builtin.debug:
+      msg: "{{Trainer}} is teaching {{Course}}"
