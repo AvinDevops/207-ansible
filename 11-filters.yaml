@@ -4,3 +4,11 @@
   - name: default value
     ansible.builtin.debug:
       msg: "I am {{ Name | default('Avinash') }}"
+
+  - name: lowercase
+    ansible.builtin.debug:
+      msg: "I am {{ Avinash | lower }}"
+  
+  - name: uppercase
+    ansible.builtin.debug:
+      msg: "I am {{ Avinash | upper }}"
