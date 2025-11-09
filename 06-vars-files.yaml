@@ -1,0 +1,8 @@
+- name: variables form file
+  hosts: node1
+  vars_files:
+  - vars.yaml
+  tasks: #list of tasks/modules/collections
+  - name:
+    ansible.builtin.debug:
+      msg: "I am {{Firstname}} {{Lastname}}"
