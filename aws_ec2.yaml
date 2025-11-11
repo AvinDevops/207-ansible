@@ -5,4 +5,4 @@ keyed_groups:
 - key:  tags['Name']
 filters:
 - tag:Name:
-  - Backend-*
+  - Backend*
